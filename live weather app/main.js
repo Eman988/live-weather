@@ -37,10 +37,11 @@ const pixaInfo = async ()=>{
         if(cardSection.style.visibility === "hidden"){
             cardSection.style.visibility =  "visible";
             
-            document.getElementById('cityImg').src = `${img}`;
+            
+        }
+             document.getElementById('cityImg').src = `${img}`;
             document.getElementById('cityImg').alt = `${CITY_NAME}`;
             document.getElementById('cityName').innerText = `${CITY_NAME}`;
-        }
         
     }
     catch(err){
