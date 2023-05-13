@@ -41,6 +41,8 @@
 </head>
 
 <body>
+
+      <div id="website-body">   
 <!-- ======= Hero Section ======= -->
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
@@ -98,11 +100,16 @@
 
         <!-- ======= weather card ======= -->
         
-    
+   
   <div id="card-section" class="d-flex align-items-center justify-content-center" style="visibility:hidden;">
-    
-    <div class="container d-flex align-items-center justify-content-center">
-    <div class="card bg-dark" style="width: 30rem;">
+     <div class="container d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <div id="loading-indicator" class="spinner-border">
+              <span id="spinner" class="visually-hidden">Loading...</span>
+          </div>
+      </div>
+
+       <div class="card bg-dark" id="card-information" style="width: 35rem;">
           <img src="" class="card-img-top" alt="" id="cityImg" />
           <div class="card-body bg-dark">
             <h5 class="card-title" id="cityName"></h5>
@@ -130,7 +137,7 @@
         </div>
   </section>
 
-     <div class="container footer-bottom clearfix" >
+     <div id="footer-bottom"class="container footer-bottom clearfix" >
       <div class="copyright">
          <strong><span> Designed by Eman Sawalha</span></strong>. 
       <div class="credits">
@@ -157,7 +164,7 @@
 
   <!-- Template Main JS File -->
  
-
+</div>
 </body>
 
 </html>
