@@ -1,18 +1,22 @@
 /**
-* Template Name: Knight
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
+*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #555555;
+  
+}
+#website-body{
+  background: url('../img/pexels-johannes-plenio-1118873.jpg') no-repeat center center ;
+  
+  background-size: cover;
+ 
+}
+.spinner-grow .sr-only{
+    left:80%;
+    margin-left: -4em;
 }
 a {
   text-decoration: none;
@@ -94,6 +98,7 @@ body,
   z-index: 997;
   transition: all 0.5s;
   box-shadow: 0 4px 10px -3px hsla(0, 60%, 1%, 0);
+  background: hsla(0, 0%, 1%, 0.632);
 }
 
 #header .logo h1 {
@@ -107,7 +112,7 @@ body,
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #070404;
+  color: #f9f2f2;
   text-decoration: none;
 }
 
@@ -143,6 +148,7 @@ body,
 */
 .navbar {
   padding: 0;
+  
 }
 
 .navbar ul {
@@ -164,7 +170,7 @@ body,
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  color: #070404;
+  color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
   transition: 0.3s;
@@ -181,7 +187,7 @@ body,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #f94747;
+  color: #fa7202;
 }
 
 .navbar .dropdown ul {
@@ -195,7 +201,7 @@ body,
   opacity: 0;
   visibility: hidden;
   background: none;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 30px rgba(9, 10, 11, 0.25);
   transition: 0.3s;
 }
 
@@ -333,7 +339,7 @@ body,
   opacity: 1;
   visibility: visible;
   background: none;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 30px rgba(11, 12, 12, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -361,13 +367,22 @@ body,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#card-section .container{
+  display:flex;
+  flex-direction: column;
+}
+#loading-indicator{
+  margin-top: 2rem;
+}
 #hero {
   width: 100%;
   height: 100vh;
   background: url("../img/hero-bg.png");
   position: relative;
 }
-
+#card-information{
+  margin-top: 2rem;
+}
 #hero .hero-container {
   position: absolute;
   bottom: 0;
@@ -1588,7 +1603,7 @@ body,
 --------------------------------------------------------------*/
 
 #footer {
-  background: url("../img/pexels-johannes-plenio-1118873.jpg") center center no-repeat;
+  /* background: url("../img/pexels-johannes-plenio-1118873.jpg") center center no-repeat;*/
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -1863,7 +1878,10 @@ input:focus {
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
-
+#footer-bottom{
+  background: hsla(0, 0%, 8%, 0.365);
+ 
+}
 
 html,
 body,
